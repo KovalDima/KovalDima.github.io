@@ -3,7 +3,7 @@
 @media (min-width: 320px) and (max-width: 480px) {
     .container {
         .header {
-            padding: 20px 30px 20px 0;
+            padding: 20px 17px 20px 0;
             nav {
                 ul {
                     li {
@@ -24,11 +24,11 @@
                     .title_text {
                         margin: 0;
                         .title_name {
-                            @include fonts(34px, 400, 40px);
+                            @include fonts(32px, 400, 40px);
                             margin-bottom: 18px;
                         }
                         .title_specialty {
-                            @include fonts(52px, 600, 65px);
+                            @include fonts(48px, 600, 62px);
                             margin-bottom: 30px;
                         }
                     }
@@ -36,10 +36,10 @@
             }
             .skills {
                 h4 {
-                    @include fonts(32px, 500, 34px);
+                    @include fonts(30px, 500, 32px);
                 }
                 span {
-                    @include fonts(19px, 400, 26px);
+                    @include fonts(18px, 400, 25px);
                     padding: 8px 18px;
 
                 }
@@ -65,10 +65,10 @@
             #info {
                 .about_me {
                     h4 {
-                        @include fonts(32px, 500, 34px);
+                        @include fonts(30px, 500, 32px);
                     }
                     p {
-                        @include fonts(20px, 400, 30px);
+                        @include fonts(18px, 400, 25px);
                     }
                 }
                 .about_me + .about_me {
@@ -85,6 +85,13 @@
                         width: 260px;
                         height: 400px;
                         margin: 18px 0;
+                        transition: none;
+                    }
+                    .card:hover {
+                        transform: none;
+                    }
+                    .card:active {
+                        transform: none;
                     }
                 }
             }
