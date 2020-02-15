@@ -538,7 +538,7 @@ ul, li {
   .container main .title_wrapper .title_content .title_text .title_specialty {
     font-size: 48px;
     font-weight: 600;
-    line-height: 62px;
+    line-height: 52px;
     margin-bottom: 30px;
   }
   .container main .skills h4 {
@@ -646,7 +646,7 @@ ul, li {
   }
 }
 
-@media (min-width: 320px) and (max-width: 350px) {
+@media (min-width: 320px) and (max-width: 360px) {
   .container .header .toggle_block .modal_content {
     padding: 108px 0 43px 10px;
   }
