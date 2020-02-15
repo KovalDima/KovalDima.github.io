@@ -482,7 +482,7 @@ ul, li {
     top: 80px;
   }
   .container .header .toggle_block .modal_content {
-    padding: 108px 0 43px 28px;
+    padding: 100px 0 38px 28px;
   }
   .container .header .toggle_block .modal_content .modal_text {
     display: block;
@@ -538,7 +538,7 @@ ul, li {
   .container main .title_wrapper .title_content .title_text .title_specialty {
     font-size: 48px;
     font-weight: 600;
-    line-height: 52px;
+    line-height: 55px;
     margin-bottom: 30px;
   }
   .container main .skills h4 {
