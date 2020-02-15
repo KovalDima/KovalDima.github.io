@@ -24,9 +24,8 @@ function toggleFunction() {
     }
 };
 
-$(window).resize(function () {
-    width = $(window).width();
-    if (width >= 1200) {
+$(document).ready(function () {
+    if ($('body').width() >= 1200) {
         const checkOpened = () => $('.js-closed_container').hasClass('js-open_container');
         const toggleOpen = () => {
             $('.js-closed_container').toggleClass('js-open_container');
