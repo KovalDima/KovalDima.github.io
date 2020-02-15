@@ -14,6 +14,44 @@
                     }
                 }
             }
+            .toggle_block {
+                width: 93%;
+                top: 80px;
+                .modal_content {
+                    padding: 108px 0 43px 28px;
+                    .modal_text {
+                        display: block;
+                        .flex_modal-text {
+                            .items {
+                                margin-bottom: 50px;
+                                .caption {
+                                    @include fonts(14px, 400, 16px);
+                                    top: -34px;
+                                    left: 23px;
+                                }
+                                .item {
+                                    @include fonts(20px, 400, 26px);
+                                }
+                            }
+                            .location::before {
+                                content: url(../img/location-mobile.svg);
+                            }
+                            .phone::before {
+                                content: url(../img/phone-mobile.svg);
+                            }
+                            .email::before {
+                                content: url(../img/email-mobile.svg);
+                            }
+                            .github::before {
+                                content: url(../img/github-mobile.svg);
+                            }
+                        }
+                        .flex_modal-text + .flex_modal-text {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
         }
         main {
             padding: 0 17px 30px 17px;
@@ -92,6 +130,27 @@
                     }
                     .card:active {
                         transform: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 360px) {
+    .container {
+        .header {
+            .toggle_block {
+                .modal_content {
+                    padding: 108px 0 43px 10px;
+                    .modal_text {
+                        .flex_modal-text {
+                            .items {
+                                .item {
+                                    @include fonts(18px, 400, 23px);
+                                }
+                            }
+                        }
                     }
                 }
             }
