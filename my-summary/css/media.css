@@ -646,7 +646,7 @@ ul, li {
   }
 }
 
-@media (min-width: 320px) and (max-width: 360px) {
+@media (min-width: 320px) and (max-width: 355px) {
   .container .header .toggle_block .modal_content {
     padding: 108px 0 43px 10px;
   }
