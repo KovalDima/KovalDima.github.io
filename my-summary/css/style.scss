@@ -195,6 +195,7 @@ ul, li {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                flex-direction: row-reverse;
                 .title_image {
                     img {
                         max-width: 410px;

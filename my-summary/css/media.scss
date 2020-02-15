@@ -1,0 +1,93 @@
+@import '../css/style.scss';
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .container {
+        .header {
+            padding: 20px 30px 20px 0;
+            nav {
+                ul {
+                    li {
+                        margin: 0;
+                    }
+                    li:nth-last-child(-n+2) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        main {
+            padding: 0 17px 30px 17px;
+            .title_wrapper {
+                padding: 30px 0;
+                .title_content {
+                    display: block;
+                    .title_text {
+                        margin: 0;
+                        .title_name {
+                            @include fonts(34px, 400, 40px);
+                            margin-bottom: 18px;
+                        }
+                        .title_specialty {
+                            @include fonts(52px, 600, 65px);
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+            .skills {
+                h4 {
+                    @include fonts(32px, 500, 34px);
+                }
+                span {
+                    @include fonts(19px, 400, 26px);
+                    padding: 8px 18px;
+
+                }
+            }
+            .adaptive_items {
+                padding: 30px 0 38px 0;
+                .adapt_phone {
+                    @include adaptive(55px, 80px, 5, 8%);
+                    box-shadow: 2px -1px 8px -1px rgb(48, 47, 51);
+                    border: 1.4px solid #302f33;
+                }
+                .adapt_tablet {
+                    @include adaptive(100px, 115px, 3, 2%);
+                    box-shadow: 2px -1px 8px -1px rgb(48, 47, 51);
+                    border: 1.4px solid #302f33;
+                }
+                .adapt_desktop {
+                    @include adaptive(190px, 142px, 2, -8%);
+                    box-shadow: 1px -1px 6px -1px rgb(48, 47, 51);
+                    border: 1.4px solid #302f33;
+                }
+            }
+            #info {
+                .about_me {
+                    h4 {
+                        @include fonts(32px, 500, 34px);
+                    }
+                    p {
+                        @include fonts(20px, 400, 30px);
+                    }
+                }
+                .about_me + .about_me {
+                    margin-top: 40px;
+                }
+            }
+            .portfolio {
+                padding: 30px 0;
+                .container_portfolio {
+                    transform: none;
+                    transition: none;
+                    padding: 0;
+                    .card {
+                        width: 260px;
+                        height: 400px;
+                        margin: 18px 0;
+                    }
+                }
+            }
+        }
+    }
+}
