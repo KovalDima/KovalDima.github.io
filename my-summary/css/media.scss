@@ -1,6 +1,6 @@
 @import '../css/style.scss';
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .container {
         .header {
             padding: 20px 17px 20px 0;
@@ -87,17 +87,14 @@
                 .adapt_phone {
                     @include adaptive(55px, 80px, 5, 8%);
                     box-shadow: 2px -1px 8px -1px rgb(48, 47, 51);
-                    border: 1.4px solid #302f33;
                 }
                 .adapt_tablet {
                     @include adaptive(100px, 115px, 3, 2%);
                     box-shadow: 2px -1px 8px -1px rgb(48, 47, 51);
-                    border: 1.4px solid #302f33;
                 }
                 .adapt_desktop {
                     @include adaptive(190px, 142px, 2, -8%);
                     box-shadow: 1px -1px 6px -1px rgb(48, 47, 51);
-                    border: 1.4px solid #302f33;
                 }
             }
             #info {
@@ -151,6 +148,48 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .container {
+        .header {
+            nav {
+                ul {
+                    li {
+                        margin: 0;
+                    }
+                    li:nth-last-child(-n+2) {
+                        display: inline-block;
+                    }
+                    li + li {
+                        margin-left: 40px;
+                    }
+                }
+            }
+        }
+        main {
+            .adaptive_items {
+                .adapt_phone {
+                    @include adaptive(90px, 140px, 5, 8%);
+                }
+                .adapt_tablet {
+                    @include adaptive(180px, 200px, 3, 2%);
+                }
+                .adapt_desktop {
+                    @include adaptive(360px, 264px, 2, -8%);
+                }
+            }
+            .portfolio {
+                .container_portfolio {
+                    .card {
+                        width: 260px;
+                        height: 400px;
+                        margin: 18px 12px;
                     }
                 }
             }
