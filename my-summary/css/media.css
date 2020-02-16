@@ -768,7 +768,7 @@ ul, li {
   }
 }
 
-@media (min-width: 900px) and (max-width: 1200px) {
+@media (min-width: 896px) and (max-width: 1200px) {
   .container .header nav ul li {
     font-size: 24px;
     font-weight: 400;
