@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: "OptimaLTStd";
-    src: url(../fonts/Optima-LT-Std-Roman_34091.ttf);
+    src: url('../fonts/Optima-LT-Std-Roman_34091.ttf');
 }
 
 @mixin font($font-family, $font-weight, $font-size, $letter-spacing) {
@@ -93,7 +93,7 @@
 .container {
     width: 100%;
     header {
-        background: url(../images/hero-screen.png);
+        background: url('../images/hero-screen.png');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -217,7 +217,7 @@
     }
     main {
         .wrapper-why-choose-us {
-            background: url(../images/screen-2.png);
+            background: url('../images/screen-2.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -305,7 +305,7 @@
             }
         }
         .country-wrapper-1 {
-            background: url(../images/screen-3.png);
+            background: url('../images/screen-3.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -316,7 +316,7 @@
             }
         }
         .country-wrapper-2 {
-            background: url(../images/screen-4.png);
+            background: url('../images/screen-4.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -328,7 +328,7 @@
             }
         }
         .wrapper-what-our-tourist-say {
-            background: url(../images/screen-5.png);
+            background: url('../images/screen-5.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;

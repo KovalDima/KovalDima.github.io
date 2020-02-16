@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap");
 @font-face {
   font-family: "OptimaLTStd";
-  src: url(../fonts/Optima-LT-Std-Roman_34091.ttf);
+  src: url("../fonts/Optima-LT-Std-Roman_34091.ttf");
 }
 
 * {
@@ -17,7 +17,7 @@
 }
 
 .container header {
-  background: url(../images/hero-screen.png);
+  background: url("../images/hero-screen.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -201,7 +201,7 @@
 }
 
 .container main .wrapper-why-choose-us {
-  background: url(../images/screen-2.png);
+  background: url("../images/screen-2.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -358,7 +358,7 @@
 }
 
 .container main .country-wrapper-1 {
-  background: url(../images/screen-3.png);
+  background: url("../images/screen-3.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -430,7 +430,7 @@
 }
 
 .container main .country-wrapper-2 {
-  background: url(../images/screen-4.png);
+  background: url("../images/screen-4.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -503,7 +503,7 @@
 }
 
 .container main .wrapper-what-our-tourist-say {
-  background: url(../images/screen-5.png);
+  background: url("../images/screen-5.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
