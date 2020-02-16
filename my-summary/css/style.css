@@ -323,7 +323,7 @@ ul, li {
   background-color: #f1ecff;
   width: 180px;
   height: 260px;
-  border: 2px solid #302f33;
+  border: 1.4px solid #302f33;
   border-radius: 3px;
   position: relative;
   z-index: 5;
@@ -342,7 +342,7 @@ ul, li {
   background-color: #f1ecff;
   width: 330px;
   height: 365px;
-  border: 2px solid #302f33;
+  border: 1.4px solid #302f33;
   border-radius: 3px;
   position: relative;
   z-index: 3;
@@ -361,7 +361,7 @@ ul, li {
   background-color: #f1ecff;
   width: 660px;
   height: 480px;
-  border: 2px solid #302f33;
+  border: 1.4px solid #302f33;
   border-radius: 3px;
   position: relative;
   z-index: 2;

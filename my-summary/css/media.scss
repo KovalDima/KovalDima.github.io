@@ -1,6 +1,6 @@
 @import '../css/style.scss';
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 1200px) {
     .container {
         .header {
             padding: 20px 17px 20px 0;
@@ -15,7 +15,7 @@
                 }
             }
             .toggle_block {
-                width: 93%;
+                width: 97%;
                 top: 80px;
                 .modal_content {
                     padding: 100px 0 38px 28px;
@@ -155,7 +155,84 @@
     }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 420px) and (max-width: 898px) {
+    .container {
+        .header {
+            .toggle_block {
+                .modal_content {
+                    padding: 120px 0 43px 48px;
+                    .modal_text {
+                        .flex_modal-text {
+                            .items {
+                                .caption {
+                                    @include fonts(16px, 400, 20px);
+                                    top: -38px;
+                                    left: 30px;
+                                }
+                                .item {
+                                    @include fonts(24px, 400, 30px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1200px) {
+    .container {
+        .header {
+            .toggle_block {
+                .modal_content {
+                    padding: 110px 0 40px 65px;
+                    .modal_text {
+                        .flex_modal-text {
+                            .items {
+                                .item {
+                                    @include fonts(28px, 400, 36px);
+                                }
+                            }
+                            .location::before {
+                                content: url(../img/location.svg);
+                            }
+                            .phone::before {
+                                content: url(../img/phone.svg);
+                            }
+                            .email::before {
+                                content: url(../img/email.svg);
+                            }
+                            .github::before {
+                                content: url(../img/github.svg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 896px) and (max-width: 1200px) {
+    .container {
+        .header {
+            .toggle_block {
+                .modal_content {
+                    padding: 85px 0 25px 0;
+                    .modal_text {
+                        display: flex;
+                        .flex_modal-text + .flex_modal-text {
+                            margin-left: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
     .container {
         .header {
             nav {
@@ -190,6 +267,68 @@
                         width: 260px;
                         height: 400px;
                         margin: 18px 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    .container {
+        .header {
+            nav {
+                ul {
+                    li {
+                        @include fonts(24px, 400, 28px);
+                    }
+                    li + li {
+                        margin-left: 60px;
+                    }
+                }
+            }
+        }
+        main {
+            .title_wrapper {
+                .title_content {
+                    display: flex;
+                    .title_text {
+                        margin-left: 50px;
+                        .title_name {
+                            @include fonts(35px, 400, 44px);
+                        }
+                        .title_specialty {
+                            @include fonts(52px, 600, 64px);
+                        }   
+                    }
+                }
+            }
+            .skills {
+                h4 {
+                    @include fonts(33px, 500, 35px);
+                }
+                span {
+                    @include fonts(21px, 400, 28px);
+                }
+            }
+            .adaptive_items {
+                .adapt_phone {
+                    @include adaptive(130px, 190px, 5, 8%);
+                }
+                .adapt_tablet {
+                    @include adaptive(220px, 250px, 3, 2%);
+                }
+                .adapt_desktop {
+                    @include adaptive(410px, 310px, 2, -8%);
+                }
+            }
+            #info {
+                .about_me {
+                    h4 {
+                        @include fonts(33px, 500, 35px);
+                    }
+                    p {
+                        @include fonts(22px, 400, 30px);
                     }
                 }
             }
