@@ -31,7 +31,7 @@
   text-align: center;
   margin: auto;
   top: 45%;
-  left: 49%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -812,11 +812,11 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
   .container header .title-wrapper {
-    max-width: 640px;
+    max-width: 650px;
   }
   .container header .title-wrapper form {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
   .container header .scroll-down {
     display: none;
@@ -833,10 +833,6 @@
 }
 
 @media (min-width: 481px) and (max-width: 640px) {
-  .container header .title-wrapper form {
-    -webkit-transform: scale(0.68);
-            transform: scale(0.68);
-  }
   .container header .menu-wrapper nav ul li {
     padding: 0 12px;
   }
