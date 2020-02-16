@@ -93,7 +93,7 @@
 .container {
     width: 100%;
     header {
-        background: url(/images/hero-screen.png) center / cover no-repeat;
+        background: url(../images/hero-screen.png) center / cover no-repeat;
         height: 100vh;
         position: relative;
         .title-wrapper {
@@ -214,7 +214,7 @@
     }
     main {
         .wrapper-why-choose-us {
-            background: url(/images/screen-2.png) center / cover no-repeat;
+            background: url(../images/screen-2.png) center / cover no-repeat;
             position: relative;
             .flexbox {
                 display: flex;
@@ -299,7 +299,7 @@
             }
         }
         .country-wrapper-1 {
-            background: url(/images/screen-3.png) center / cover no-repeat;
+            background: url(../images/screen-3.png) center / cover no-repeat;
             position: relative;
             height: 700px;
             .content-box {
@@ -307,7 +307,7 @@
             }
         }
         .country-wrapper-2 {
-            background: url(/images/screen-4.png) center / cover no-repeat;
+            background: url(../images/screen-4.png) center / cover no-repeat;
             position: relative;
             height: 700px;
             .content-box {
@@ -316,7 +316,7 @@
             }
         }
         .wrapper-what-our-tourist-say {
-            background: url(/images/screen-5.png) center / cover no-repeat;
+            background: url(../images/screen-5.png) center / cover no-repeat;
             position: relative;
             height: 780px;
             h2 {
