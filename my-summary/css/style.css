@@ -402,6 +402,34 @@ ul, li {
   max-width: 940px;
 }
 
+.container main #info .about_me p a {
+  color: black;
+  font-weight: 500;
+}
+
+.container main #info .about_me p a:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.05s;
+  transition: 0.05s;
+}
+
+.container main #info .about_me p a:before {
+  content: '';
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 1.5px;
+  background-color: black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.container main #info .about_me p a:hover:before {
+  width: 100%;
+}
+
 .container main #info .about_me + .about_me {
   margin-top: 80px;
 }
@@ -442,7 +470,9 @@ ul, li {
 }
 
 .container main .portfolio .container_portfolio .card img {
-  max-width: 100%;
+  width: 220px;
+  height: 350px;
+  border-radius: 2px;
 }
 
 .container main .portfolio .container_portfolio .card:hover {

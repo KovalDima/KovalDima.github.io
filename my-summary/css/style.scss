@@ -36,6 +36,26 @@ ul, li {
     transform: rotateY(-12deg);
 }
 
+@mixin href-line($background-color, $height) {
+    a:active {
+        transform: scale(0.9);
+        transition: 0.05s;
+    }
+    a:before {
+        content: '';
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        width: 0%;
+        height: $height;
+        background-color: $background-color;
+        transition: 0.2s;
+    }
+    a:hover:before {
+        width: 100%;
+    }
+}
+
 .container {
     .header {
         background-color: #302f33;
@@ -53,23 +73,7 @@ ul, li {
                     a {
                         color: #fff;
                     }
-                    a:active {
-                        transform: scale(0.9);
-                        transition: 0.05s;
-                    }
-                    a:before {
-                        content: '';
-                        bottom: 0;
-                        left: 0;
-                        position: absolute;
-                        width: 0%;
-                        height: 1px;
-                        background-color: #fff;
-                        transition: 0.2s;
-                    }
-                    a:hover:before {
-                        width: 100%;
-                    }
+                    @include href-line(#fff, 1px);
                 }
                 li + li {
                     margin-left: 125px;
@@ -150,23 +154,7 @@ ul, li {
                             .git {
                                 position: relative;
                                 left: -41px;
-                                a:active {
-                                    transform: scale(0.9);
-                                    transition: 0.05s;
-                                    }
-                                a:before {
-                                    content: '';
-                                    bottom: 0;
-                                    left: 0;
-                                    position: absolute;
-                                    width: 0%;
-                                    height: 1px;
-                                    background-color: #fff;
-                                    transition: 0.2s;
-                                }
-                                a:hover:before {
-                                    width: 100%;
-                                }
+                                @include href-line(#fff, 1px);
                             }
                         }
                         .location::before {
@@ -293,6 +281,11 @@ ul, li {
                     margin: 0;
                     @include fonts(24px, 400, 34px);
                     max-width: 940px;
+                    a {
+                        color: black;
+                        font-weight: 500;
+                    }
+                    @include href-line(black, 1.5px);
                 }
             }
             .about_me + .about_me {
@@ -319,7 +312,9 @@ ul, li {
                     width: 220px;
                     transition: 0.3s;
                     img {
-                        max-width: 100%;
+                        width: 220px;
+                        height: 350px;
+                        border-radius: 2px;
                     }
                 }
                 .card:hover {

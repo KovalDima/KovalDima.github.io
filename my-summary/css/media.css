@@ -442,7 +442,9 @@ ul, li {
 }
 
 .container main .portfolio .container_portfolio .card img {
-  max-width: 100%;
+  width: 220px;
+  height: 350px;
+  border-radius: 2px;
 }
 
 .container main .portfolio .container_portfolio .card:hover {
@@ -695,7 +697,7 @@ ul, li {
   }
 }
 
-@media (min-width: 899px) and (max-width: 1200px) {
+@media (min-width: 896px) and (max-width: 1200px) {
   .container .header .toggle_block .modal_content {
     padding: 85px 0 25px 0;
   }
