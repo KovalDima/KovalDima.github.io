@@ -1,0 +1,97 @@
+.toggle_block {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 130px;
+  .modal_content {
+    background-color: #302f33;
+    color: #fff;
+    padding: 95px 0 10px 0;
+    #close {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+    }
+    #close::before,
+    #close::after {
+      position: absolute;
+      left: 15px;
+      content: "";
+      height: 36px;
+      width: 2.6px;
+      background-color: #fff;
+    }
+    #close::before {
+      transform: rotate(45deg);
+    }
+    #close::after {
+      transform: rotate(-45deg);
+    }
+    .modal_text {
+      cursor: default;
+      display: flex;
+      justify-content: center;
+      .flex_modal-text {
+        .items {
+          margin-bottom: 70px;
+          .caption {
+            display: inline-block;
+            margin: 0;
+            @include fonts(15px, 400, 18px);
+            position: relative;
+            top: -45px;
+            left: 28px;
+          }
+          .item {
+            display: inline-block;
+            margin: 0;
+            @include fonts(35px, 400, 43px);
+            a {
+              color: #fff;
+            }
+          }
+          .city {
+            position: relative;
+            left: -24px;
+          }
+          .number {
+            position: relative;
+            left: -31px;
+          }
+          .post {
+            position: relative;
+            left: -25px;
+          }
+          .git {
+            position: relative;
+            left: -41px;
+            @include href-line(#fff, 1px);
+          }
+        }
+        .location::before {
+          content: url(../../img/location.svg);
+        }
+        .phone::before {
+          content: url(../../img/phone.svg);
+        }
+        .email::before {
+          content: url(../../img/email.svg);
+        }
+        .github::before {
+          content: url(../../img/github.svg);
+        }
+      }
+      .flex_modal-text + .flex_modal-text {
+        margin-left: 60px;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@mixin fonts($font-size, $font-weight, $line-height) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin adaptive($width, $height, $z-index, $left) {
+  background-color: #f1ecff;
+  width: $width;
+  height: $height;
+  border: 1.4px solid #302f33;
+  border-radius: 3px;
+  position: relative;
+  z-index: $z-index;
+  box-shadow: 4px -1px 12px -1px rgb(48, 47, 51);
+  left: $left;
+  transform: rotateY(-12deg);
+}
+
+@mixin href-line($background-color, $height) {
+  a:active {
+    transform: scale(0.9);
+    transition: 0.05s;
+  }
+  a:before {
+    content: "";
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: $height;
+    background-color: $background-color;
+    transition: 0.2s;
+  }
+  a:hover:before {
+    width: 100%;
+  }
+}
