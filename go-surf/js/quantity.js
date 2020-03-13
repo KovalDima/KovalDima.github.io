@@ -1,5 +1,5 @@
 $(
-  '<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="../img/plus.svg"/></div><div class="quantity-button quantity-down"><img src="../img/minus.svg"/></div></div>'
+  '<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="img/plus.svg" ></img></div><div class="quantity-button quantity-down"><img src="img/minus.svg" ></img></div></div>'
 ).insertAfter(".quantity input");
 $(".quantity").each(function() {
   var spinner = jQuery(this),
