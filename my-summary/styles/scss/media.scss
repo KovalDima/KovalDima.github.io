@@ -1,4 +1,4 @@
-@import "./mixins.scss";
+@import './mixins.scss';
 
 @media (min-width: 320px) and (max-width: 1200px) {
   .container {
@@ -274,9 +274,6 @@
     .header {
       nav {
         ul {
-          li {
-            @include fonts(24px, 400, 28px);
-          }
           li + li {
             margin-left: 60px;
           }
