@@ -78,7 +78,7 @@
         }
         span {
           @include fonts(18px, 400, 25px);
-          padding: 8px 18px;
+          padding: 7px 18px 9px 18px;
         }
       }
       .adaptive_items {
