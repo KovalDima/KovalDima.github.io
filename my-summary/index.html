@@ -3,205 +3,276 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Summary</title>
-    <link rel="stylesheet" href="styles/lib/normalize.css" />
-    <link rel="stylesheet" href="styles/lib/animate.css" />
-    <link rel="stylesheet" href="styles/css/style.min.css" />
+    <title>Dmitry Koval</title>
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
-
   <body>
     <div class="container">
       <header class="header">
-        <nav>
+        <h1 class="titleName">Dmitriy Koval</h1>
+        <div class="subtitle">
+          <span>frontend</span>
+          <span>developer</span>
+        </div>
+        <nav class="navBar">
           <ul>
-            <li><a onclick="toggleDropDown()">Контакты</a></li>
-            <li><a href="#info">Обо мне</a></li>
-            <li><a href="#my_works">Портфолио</a></li>
+            <li>
+              <a
+                class="mail"
+                href="mailto:mr.smith8263@gmail.com"
+                target="_blank"
+                >mr.smith8263@gmail.com</a
+              >
+            </li>
+            <li>
+              <a
+                class="github"
+                href="https://github.com/KovalDima"
+                target="_blank"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a
+                class="telegram"
+                href="https://t.me/dimakoval_frontend"
+                target="_blank"
+                >380 73 320 28 36</a
+              >
+            </li>
           </ul>
         </nav>
-        <div id="js-toggle_block" class="toggle_block">
-          <div class="modal_content">
-            <span id="close" onclick="toggleDropDown()"></span>
-            <div class="modal_text">
-              <div class="flex_modal-text">
-                <div class="location items">
-                  <p class="caption">
-                    Город
-                  </p>
-                  <p class="item city">
-                    Киев
-                  </p>
-                </div>
-                <div class="phone items">
-                  <p class="caption">
-                    Номер
-                  </p>
-                  <p class="item number">
-                    <a href="tel:380733202836">073 320 2836</a>
-                  </p>
-                </div>
-              </div>
-              <div class="flex_modal-text">
-                <div class="email items">
-                  <p class="caption">
-                    Почта
-                  </p>
-                  <p class="item post">
-                    koval_dima97@ukr.net
-                  </p>
-                </div>
-                <div class="github items">
-                  <p class="caption">
-                    Аккаунт
-                  </p>
-                  <p class="item git">
-                    <a href="https://github.com/KovalDima" target="_blank"
-                      >GitHub</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
+        <div class="headerRightMobile">
+          <div class="subtitle">
+            <span>frontend</span>
+            <span>developer</span>
           </div>
+          <nav class="navBarMobile">
+            <ul>
+              <li>
+                <a href="mailto:mr.smith8263@gmail.com" target="_blank"
+                  ><img src="img/mail-icon-mobile.svg" alt="email"
+                /></a>
+              </li>
+              <li>
+                <a href="https://t.me/dimakoval_frontend" target="_blank"
+                  ><img src="img/telegram-icon-mobile.svg" alt="telegram"
+                /></a>
+              </li>
+              <li>
+                <a href="https://github.com/KovalDima" target="_blank"
+                  ><img src="img/github-icon-mobile.svg" alt="github"
+                /></a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
-      <main>
-        <section class="title_wrapper">
-          <div class="title_content">
-            <div class="title_text">
-              <p class="title_name">Коваль Дима</p>
-              <p class="title_specialty">Frontend developer</p>
+      <main class="main">
+        <section class="aboutMeSection">
+          <div class="itemsWrapper">
+            <div class="item">
+              <h3 class="itemTitle">About</h3>
+              <div class="itemText">
+                <p>
+                  I live in Kiev, Ukraine. I strive to develop and grow as a
+                  professional. Adequately perceive criticism, know how to work
+                  in a team, punctual, attentive to details and focused on
+                  results.
+                </p>
+              </div>
             </div>
-            <div class="title_image">
-              <img src="img/profile-img.jfif" alt="Фото профиля" />
+            <div class="item">
+              <h3 class="itemTitle">Skills</h3>
+              <div class="itemText">
+                <p>
+                  English: pre-intermediate. <br />
+                  HTML5, CSS3, JavaScript, jQuery, React.js, pug, scss/sass,
+                  Bootstrap, Git, adaptive layout.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <h3 class="itemTitle">Tools</h3>
+              <div class="itemText">
+                <p>VS Code, DevTools, Github, Photoshop, Figma</p>
+              </div>
             </div>
           </div>
         </section>
-        <section class="skills">
-          <h4>
-            Навыки
-          </h4>
-          <div class="line"></div>
-          <span>HTML5</span>
-          <span>CSS3</span>
-          <span>JavaScript</span>
-          <span>jQuery</span>
-          <span>Основы React.js</span>
-          <span>Pug</span>
-          <span>Gulp</span>
-          <span>SCSS/SASS</span>
-          <span>Bootstrap</span>
-          <span>Flex/Grid</span>
-          <span>Git</span>
-          <span>Адаптивная верстка</span>
-          <span>Знаком с CMS WordPress</span>
-        </section>
-        <section class="adaptive_items">
-          <div class="adapt_phone wow slideInUp" data-wow-duration="1.5s"></div>
-          <div
-            class="adapt_tablet wow slideInUp"
-            data-wow-duration="1.5s"
-          ></div>
-          <div
-            class="adapt_desktop wow slideInUp"
-            data-wow-duration="1.5s"
-          ></div>
-        </section>
-        <section id="info">
-          <div class="about_me">
-            <h4>Обо мне</h4>
-            <div class="line"></div>
-            <p>
-              Нахожусь в поисках постоянной работы. Готов к обучению и
-              расширению своих навыков. Есть огромное желание работать и вносить
-              свой вклад в проекты компании. Из личных качеств могу отметить
-              ответственность, пунктуальность, умение работать в команде,
-              внимание к мелочам и нацеленность на результат.
-            </p>
-          </div>
-          <div class="about_me">
-            <h4>Образование</h4>
-            <div class="line"></div>
-            <p>
-              Законченное высшее образование в Киевском национальном
-              университете имени Тараса Шевченка.<br />
-              Прошёл полугодовой курс Frontend разработки. В свободное время
-              постоянно занимаюсь саморазвитием навыков.
-            </p>
-          </div>
-          <div class="about_me">
-            <div id="my_works">
-              <h4>Мои работы</h4>
+        <section class="educationSection">
+          <h3 class="itemTitle">Education</h3>
+          <div class="itemsWrapper">
+            <div class="item">
+              <div class="itemText">
+                <p>Sep 2015 - Jun 2019, 4 years</p>
+                <span>Faculty of ecology. Institute of biology</span>
+                <p>
+                  Taras Shevchenko National <br />
+                  University of Kyiv
+                </p>
+              </div>
             </div>
-            <div class="line"></div>
-            <p>
-              С деталями работ можно ознакомиться перейдя на
-              <a
-                href="https://github.com/KovalDima/sourcesOfMyWorks"
-                target="_blank"
-                >GitHub</a
-              >.
-            </p>
+            <div class="item">
+              <div class="itemText">
+                <p>Sept 2019 - Feb 2020, 5 months</p>
+                <span>Frontend development</span>
+                <p>Beetroot Academy</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="itemText">
+                <p>Sept 2019 - Feb 2020, 5 month</p>
+                <span>Web development</span>
+                <p>Codecademy</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="itemText">
+                <p>Dec 2019 - Feb 2020, 2 month</p>
+                <span>React + Redux</span>
+                <p>Udemy</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="itemText">
+                <p>Mar 2020 - Apr 2020, 1 month</p>
+                <span>Full JavaScript course</span>
+                <p>Udemy</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="itemText">
+                <p>Apr 2020 - May 2020, 1 month</p>
+                <span>Practical JavaScript</span>
+                <p>Udemy</p>
+              </div>
+            </div>
           </div>
         </section>
-        <section class="portfolio js-portfolio">
-          <div class="container_portfolio js-closed_container">
-            <div class="card js-card">
-              <a
-                href="https://kovaldima.github.io/go-surf"
-                target="_blank"
-                class="js-cardLink"
-                ><img src="img/go-surf.jpg"
+        <section class="workExperienceSection">
+          <h3 class="itemTitle">Work experience</h3>
+          <div class="itemsWrapper">
+            <div class="item">
+              <div>
+                <p>Feb 2020 - Mar 2020, 2 months</p>
+                <span>Frontend developer</span>
+                <p>Startup PoraPoBaram</p>
+              </div>
+              <p>
+                My responsibilities on this project were to develop components
+                of a mobile application using React.js, stylize them, fill them
+                with functionality and adaptability for mobile devices of
+                different sizes.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="designSection">
+          <h3 class="title">Projects</h3>
+          <div class="itemsWrapper">
+            <div class="item">
+              <a href="https://kovaldima.github.io/go-surf" target="_blank"
+                ><p>Go-Surf‎</p>
+                <img src="img/works/thumbnails/go-surf.jpg" alt="my works"
               /></a>
             </div>
-            <div class="card js-card">
-              <a
-                href="https://kovaldima.github.io/logo-type"
-                target="_blank"
-                class="js-cardLink"
-                ><img src="img/logo-type.png"
+            <div class="item">
+              <a href="https://kovaldima.github.io/logo-type" target="_blank"
+                ><p>Logotype</p>
+                <img src="img/works/thumbnails/logo-type.jpg" alt="my works"
               /></a>
             </div>
-            <div class="card js-card">
-              <a
-                href="https://kovaldima.github.io/travel-more"
-                target="_blank"
-                class="js-cardLink"
-                ><img src="img/travel-more.png"
+            <div class="item">
+              <a href="https://react-todo-list-koval.web.app" target="_blank">
+                <p>Todo list</p>
+                <img src="img/works/thumbnails/todo-list.jpg" alt="my works"
               /></a>
             </div>
-            <div class="card js-card">
+            <div class="item">
               <a
-                href="https://react-example-site.web.app"
+                href="https://kovaldima.github.io/healthy-food"
                 target="_blank"
-                class="js-cardLink"
-                ><img src="img/react-site.jpg"
+              >
+                <p>Healthy Food</p>
+                <img src="img/works/thumbnails/healthy-food.jpg" alt="my works"
               /></a>
             </div>
-            <div class="card js-card">
-              <a
-                href="https://react-todo-list-koval.web.app"
-                target="_blank"
-                class="js-cardLink"
-                ><img src="img/react-todo-list.jpg"
+            <div class="item">
+              <a href="https://travel-site-f2505.web.app" target="_blank"
+                ><p>Travel.org</p>
+                <img src="img/works/thumbnails/travel-org.jpg" alt="my works"
               /></a>
             </div>
-            <div class="card js-card">
-              <a href="http://google.ru" target="_blank" class="js-cardLink"
-                ><img src="img/portfolio.svg"
+            <div class="item">
+              <a href="https://kovaldima.github.io/travel-more" target="_blank"
+                ><p>Bhromaon</p>
+                <img src="img/works/thumbnails/bhromaon.jpg" alt="my works"
               /></a>
             </div>
           </div>
         </section>
       </main>
+      <footer class="footer">
+        <h1 class="titleName">dmitriy koval</h1>
+        <div class="subtitle">
+          <span>frontend</span>
+          <span>developer</span>
+        </div>
+        <nav class="navBar">
+          <ul>
+            <li>
+              <a
+                class="mail"
+                href="mailto:mr.smith8263@gmail.com"
+                target="_blank"
+                >mr.smith8263@gmail.com</a
+              >
+            </li>
+            <li>
+              <a
+                class="github"
+                href="https://github.com/KovalDima"
+                target="_blank"
+                ><span>Github</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="telegram"
+                href="https://t.me/dimakoval_frontend"
+                target="_blank"
+                ><span>380 73 320 28 36</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="footerRightMobile">
+          <div class="subtitle">
+            <span>frontend</span>
+            <span>developer</span>
+          </div>
+          <nav class="navBarMobile">
+            <ul>
+              <li>
+                <a href="mailto:mr.smith8263@gmail.com" target="_blank"
+                  ><img src="img/mail-icon-mobile.svg" alt="email"
+                /></a>
+              </li>
+              <li>
+                <a href="https://t.me/dimakoval_frontend" target="_blank"
+                  ><img src="img/telegram-icon-mobile.svg" alt="telegram"
+                /></a>
+              </li>
+              <li>
+                <a href="https://github.com/KovalDima" target="_blank"
+                  ><img src="img/github-icon-mobile.svg" alt="github"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
     </div>
-    <script src="JS/wow.min.js"></script>
-    <script>
-      new WOW().init()
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="JS/smoothScroll.js"></script>
-    <script src="JS/toggleDropDown.js"></script>
-    <script src="JS/main.js"></script>
   </body>
 </html>
