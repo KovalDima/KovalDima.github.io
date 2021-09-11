@@ -14,6 +14,13 @@ function burgerMenu() {
       menu.classList.toggle("menu__list_js-active");
     });
   });
+
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('.menu__list_js') === null && e.target.closest('.hamburger') === null) {
+      menu.classList.remove("menu__list_js-active");
+      hamburger.classList.remove("hamburger_active");
+    }
+  })
 }
 
 burgerMenu();
