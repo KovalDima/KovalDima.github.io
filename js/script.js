@@ -15,12 +15,47 @@ function burgerMenu() {
     });
   });
 
-  document.addEventListener('click', (e) => {
-    if (e.target.closest('.menu__list_js') === null && e.target.closest('.hamburger') === null) {
+  document.addEventListener("click", (e) => {
+    if (
+      e.target.closest(".menu__list_js") === null &&
+      e.target.closest(".hamburger") === null
+    ) {
       menu.classList.remove("menu__list_js-active");
       hamburger.classList.remove("hamburger_active");
     }
-  })
+  });
 }
 
 burgerMenu();
+
+/* if (document.documentElement.clientWidth < 750) {
+  window.onscroll = function () {
+    const header = document.querySelector(".header");
+    if (window.pageYOffset > 45 && window.pageYOffset < 1000) {
+      header.classList.add("hidden");
+      header.classList.remove("show");
+    } else if (window.pageYOffset < 45 || window.pageYOffset > 1000) {
+      header.classList.remove("hidden");
+      header.classList.add("show");
+    }
+  };
+} */
+
+function toggleHeader() {
+  const header = document.querySelector(".header");
+  let scrollPrev = 0;
+
+  window.addEventListener("scroll", () => {
+    let scrolled = window.scrollY;
+    if (scrolled > 45 && scrolled > scrollPrev) {
+      header.classList.add("hidden");
+      header.classList.remove("show");
+    } else {
+      header.classList.remove("hidden");
+      header.classList.add("show");
+    }
+    scrollPrev = scrolled;
+  });
+}
+
+toggleHeader();
